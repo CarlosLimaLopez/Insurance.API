@@ -3,6 +3,7 @@
     <File Path="docker-compose.yml" />
   </Folder>
   <Folder Name="/Elementos de la solución/">
+    <File Path="Architecture Diagram.png" />
     <File Path="README.md" />
   </Folder>
   <Folder Name="/Tests/">

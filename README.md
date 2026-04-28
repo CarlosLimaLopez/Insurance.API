@@ -12,7 +12,7 @@ It receives booking notifications from hotel systems, manages insurance policies
 - **Domain Layer:** Contains business entities (`Booking`, `InsuredBooking`) and business rules.
 - **Infrastructure Layer:** Integrates with PostgreSQL (EF Core), RabbitMQ (MassTransit Outbox), and external insurance APIs.
 
-See the hand-drawn architecture diagram for component relationships.
+![Architecture Diagram](Architecture%20Diagram.png)
 
 ## Main Features
 
@@ -58,7 +58,3 @@ See the hand-drawn architecture diagram for component relationships.
 - `GET /api/invoices/cancelled-bookings`
 - Example request for confirmation:
 - { "reference": "A83K1C", "action": "confirmation", "checkin": "2022-09-13", "checkout": "2022-09-17", "people": 3 }
-
-## Architecture Diagram
-
-A architecture diagram is included as a starting point for technical discussion.
