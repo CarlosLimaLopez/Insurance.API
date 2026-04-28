@@ -2,6 +2,9 @@
   <Folder Name="/deploy/">
     <File Path="docker-compose.yml" />
   </Folder>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="README.md" />
+  </Folder>
   <Folder Name="/Tests/">
     <Project Path="Insurance.Application.UnitTests/Insurance.Application.UnitTests.csproj" />
     <Project Path="Insurance.Domain.UnitTests/Insurance.Domain.UnitTests.csproj" />
