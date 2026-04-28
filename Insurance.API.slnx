@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/deploy/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Insurance.Application.UnitTests/Insurance.Application.UnitTests.csproj" />
+    <Project Path="Insurance.Domain.UnitTests/Insurance.Domain.UnitTests.csproj" />
+  </Folder>
+  <Project Path="Insurance.API/Insurance.API.csproj" />
+  <Project Path="Insurance.Application/Insurance.Application.csproj" />
+  <Project Path="Insurance.Domain/Insurance.Domain.csproj" />
+  <Project Path="Insurance.Infrastructure/Insurance.Infrastructure.csproj" />
+</Solution>

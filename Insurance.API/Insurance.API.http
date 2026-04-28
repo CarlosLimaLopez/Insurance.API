@@ -1,0 +1,46 @@
+@Insurance.API_HostAddress = http://localhost:7097
+@Reference = "A83K1F"
+
+### 1. Confirmation
+POST {{Insurance.API_HostAddress}}/api/bookings/notifications
+Content-Type: application/json
+
+{
+  "reference": {{Reference}},
+  "action": "confirmation",
+  "checkin": "2022-09-11",
+  "checkout": "2022-09-17",
+  "people": 3
+}
+
+### 2. Modification
+POST {{Insurance.API_HostAddress}}/api/bookings/notifications
+Content-Type: application/json
+
+{
+  "reference": {{Reference}},
+  "action": "modification",
+  "checkin": "2022-09-12",
+  "checkout": "2022-09-19",
+  "people": 4
+}
+
+### 3. Cancellation
+POST {{Insurance.API_HostAddress}}/api/bookings/notifications
+Content-Type: application/json
+
+{
+  "reference": {{Reference}},
+  "action": "cancellation",
+  "checkin": "2022-09-12",
+  "checkout": "2022-09-19",
+  "people": 3
+}
+
+### 4. List Insured Bookings
+GET {{Insurance.API_HostAddress}}/api/reports/insured-bookings
+Accept: application/json
+
+### 5. List Cancelled Bookings
+GET {{Insurance.API_HostAddress}}/api/reports/cancelled-bookings
+Accept: application/json
